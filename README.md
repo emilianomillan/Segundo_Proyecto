@@ -1,183 +1,186 @@
-# Visual Board - Proyecto Integrador COM-11117
+#   Pagina WEB: VisualBoard
+<div align="center">
 
-## 📋 Información del Proyecto
+### Segundo Proyecto Integrador — COM-11117: Introducción al Desarrollo Web
 
-**Nombre:** Visual Board - Aplicación Web Tipo Pinterest  
-**Materia:** COM-11117 - Proyecto Integrador  
-**Institución:** Instituto Tecnológico Autónomo de México 
-**Fecha:** 14 de Diciembre 2025  
-
-## 👥 Equipo de Desarrollo
-
-- **David Fernando Avila Díaz** - 197851
-- **Emiliano Sebastián Millán Giffard** - 214360
-
-## 🎯 Descripción del Proyecto
-
-Visual Board es una aplicación web inspirada en Pinterest que permite a los usuarios crear, compartir y gestionar contenido visual de manera intuitiva. La plataforma combina funcionalidades modernas de frontend con un backend robusto para ofrecer una experiencia de usuario completa.
-
-## ✨ Características Principales
-
-### 🖼️ Gestión de Imágenes
-- Carga y visualización de imágenes desde Unsplash API
-- Subida de imágenes personalizadas
-- Visualización en grid tipo masonry
-- Verificación automática de salud de imágenes
-
-### 👤 Sistema de Usuarios
-- Registro e inicio de sesión
-- Gestión de perfil de usuario
-- Autenticación segura
-
-### 📱 Funcionalidades de Contenido
-- Creación y edición de posts
-- Vista detallada de contenido
-- Página de descubrimiento
-- Gestión personal de posts
-
-### 🎨 Experiencia de Usuario
-- Interfaz responsive con Bootstrap
-- Navegación intuitiva
-- Estados de carga y manejo de errores
-- Diseño moderno y limpio
-
-## 🛠️ Tecnologías Utilizadas
-
-### Frontend
-- **React 19.2.1** - Framework principal
-- **Vite 7.2.7** - Build tool y desarrollo
-- **React Router DOM 7.10.1** - Navegación
-- **Bootstrap 5.3.8** - Framework CSS
-- **Axios 1.13.2** - Cliente HTTP
-- **React Masonry CSS** - Layout de grilla
-
-### Backend
-- **FastAPI** - Framework web de Python
-- **SQLAlchemy** - ORM para base de datos
-- **PostgreSQL** - Base de datos principal
-- **Pydantic** - Validación de datos
-- **Python-multipart** - Manejo de archivos
-
-### Servicios Externos
-- **Unsplash API** - Fuente de imágenes
-- **Render** - Hosting del backend
-- **GitHub Pages** - Hosting del frontend
-
-## 📁 Estructura del Proyecto
-
-```
-Segundo_Proyecto/
-├── frontend/                    # Aplicación React
-│   ├── src/
-│   │   ├── components/         # Componentes reutilizables
-│   │   ├── pages/             # Páginas de la aplicación
-│   │   ├── services/          # Servicios de API
-│   │   ├── hooks/             # Custom hooks
-│   │   ├── config/            # Configuraciones
-│   │   └── utils/             # Utilidades
-│   ├── public/                # Assets públicos
-│   ├── index.html             # HTML principal
-│   ├── package.json           # Dependencias del frontend
-│   └── vite.config.js         # Configuración de Vite
-├── backend/                    # API FastAPI
-│   ├── app/
-│   │   ├── api/               # Endpoints de la API
-│   │   ├── core/              # Configuración central
-│   │   ├── models/            # Modelos de base de datos
-│   │   ├── schemas/           # Esquemas de validación
-│   │   └── services/          # Servicios del backend
-│   ├── main.py                # Archivo principal
-│   └── requirements.txt       # Dependencias de Python
-├── visual_board_schema.sql     # Esquema de base de datos
-├── docs/                      # Documentación adicional
-└── README.md                  # Este archivo
-```
-
-## 🚀 Instalación y Configuración
-
-### Prerequisitos
-- Node.js (v18 o superior)
-- Python (v3.9 o superior)
-- PostgreSQL
-- Git
-
-### Frontend
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-### Backend
-```bash
-cd backend
-pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8000
-```
-
-### Base de Datos
-```bash
-# Crear base de datos PostgreSQL
-createdb visual_board
-
-# Ejecutar schema
-psql visual_board < visual_board_schema.sql
-```
-
-## 🔧 Configuración
-
-### Variables de Entorno (Backend)
-```
-DATABASE_URL=postgresql://username:password@localhost/visual_board
-UNSPLASH_ACCESS_KEY=your_unsplash_api_key
-```
-
-## 📱 Funcionalidades Implementadas
-
-### ✅ Frontend
-- [x] Componente de navegación responsive
-- [x] Página de inicio con grid de imágenes
-- [x] Sistema de autenticación completo
-- [x] Gestión de posts (crear, editar, eliminar)
-- [x] Vista de descubrimiento con API de Unsplash
-- [x] Modal de detalles de post
-- [x] Manejo de estados de carga y error
-- [x] Componente de verificación de salud de imágenes
-
-### ✅ Backend
-- [x] API RESTful con FastAPI
-- [x] Autenticación de usuarios
-- [x] CRUD completo de posts
-- [x] Integración con Unsplash API
-- [x] Subida de archivos
-- [x] Verificación de salud de imágenes
-- [x] Base de datos PostgreSQL
-
-## 🌐 Despliegue
-
-### Frontend
-- **URL de producción:** https://dabtcavila.github.io/WEB-VisualBoard
-- **Plataforma:** GitHub Pages
-- **Build:** Vite optimizado para producción
-
-### Backend
-- **URL de API:** https://visual-board-api.onrender.com
-- **Plataforma:** Render
-- **Base de datos:** PostgreSQL en Render
-
-## 📊 Testing y Calidad
-
-- Verificación automática de imágenes rotas
-- Manejo de errores y estados de carga
-- Validación de formularios
-- Responsive design testing
-
-
-## 📝 Licencia
-
-Este proyecto fue desarrollado como parte del Proyecto Integrador de la Materia COM-11117 del Instituto Tecnológico Autónomo de México
+[![ITAM](https://img.shields.io/badge/ITAM-Otoño%202025-00524E?style=for-the-badge)](https://www.itam.mx)
 
 ---
 
-**© 2024 Visual Board - Proyecto Integrador COM-11117**  
-Desarrollado por David Fernando Avila Díaz y Emiliano Sebastián Millán Giffard
+**Visual Board** es una aplicación web inspirada en la experiencia de usuario de Pinterest. Su objetivo principal es permitir a los usuarios gestionar, compartir y descubrir imágenes en un contexto de red social.
+
+El proyecto fue desarrollado en dos estructuras:
+
+- **Backend (Python / FastAPI):** La API gestiona la lógica de negocio, la persistencia de datos en PostgreSQL y la integración con servicios externos.
+- **Frontend (React):** Interfaz de usuario reactiva e interactiva, diseñada con Bootstrap para garantizar la adaptabilidad y responsabilidad en dispositivos móviles y de escritorio.
+
+El sistema cuenta con tres módulos principales:
+1. **Gestión de Contenido (CRUD):** Los usuarios pueden subir sus propias imágenes, editarlas y organizarlas mediante un sistema de etiquetado.
+2. **Descubrimiento:** Integración con la API de Unsplash para ofrecer un feed infinito de imágenes.
+3. **Optimización:** Implementación de caché local (`localStorage`) para mejorar la velocidad de carga y reducir el consumo de datos.
+
+---
+
+## Características
+
+### Frontend
+- **Mosaico dinámico** de imágenes estilo Pinterest
+- **Diseño responsivo** adaptable a móviles y escritorio
+- **CRUD completo** para gestión de posts
+- **Sección Descubrimiento** con imágenes aleatorias de Unsplash
+- **Caché** con localStorage y timestamps
+- **OpenGraph** para compartir en redes sociales
+
+### Backend
+- **API** con FastAPI
+- **Autenticación por headers** para identificación de usuarios
+- **Integración con Unsplash** 
+
+---
+
+## Instalación y Configuración
+
+### Requisitos Previos
+
+- **Node.js** 18.x o superior
+- **Python** 3.10 o superior
+- **PostgreSQL** 15 o superior
+- **Git**
+
+---
+
+### Frontend
+
+1. **Navegar al directorio del frontend:**
+   ```
+   cd frontend
+   ```
+
+2. **Instalar dependencias:**
+   ```
+   npm install
+   ```
+
+3. **Configurar variables de entorno:**
+   ```
+   cp .env.example .env
+   # Editar .env con la URL de tu API
+   ```
+
+4. **Iniciar servidor de desarrollo:**
+   ```
+   npm run dev
+   ```
+
+5. **Acceder a la aplicación:**
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+### Backend
+
+1. **Navegar al directorio del backend:**
+   ```
+   cd backend
+   ```
+
+2. **Crear y activar entorno virtual:**
+   ```
+   python -m venv venv
+   
+   # En Windows
+   venv\Scripts\activate
+   
+   # En macOS/Linux
+   source venv/bin/activate
+   ```
+
+3. **Instalar dependencias:**
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. **Configurar variables de entorno:**
+   ```bash
+   cp .env.example .env
+   # Editar el ".env" con las credenciales
+   ```
+
+5. **Configurar base de datos:**
+   ```
+   # Crear base de datos en PostgreSQL
+   createdb visual_board
+   ```
+
+6. **Iniciar servidor:**
+   ```
+   uvicorn main:app --reload --port 8000
+   ```
+
+7. **Acceder a la documentación:**
+   ```
+   http://localhost:8000/docs      # Swagger UI
+   ```
+
+---
+
+## Endpoints de la API
+
+### Posts
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `GET` | `/api/posts` | Listar posts (paginado) |
+| `GET` | `/api/posts/{id}` | Obtener post por ID |
+| `POST` | `/api/posts` | Crear nuevo post |
+| `PUT` | `/api/posts/{id}` | Reemplazar post completo |
+| `PATCH` | `/api/posts/{id}` | Actualizar post parcialmente |
+| `DELETE` | `/api/posts/{id}` | Eliminar post |
+
+### Descubrimiento
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `GET` | `/api/discover` | Obtener imágenes aleatorias de Unsplash |
+
+### Sistema
+
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `GET` | `/health` | Estado del servidor y servicios externos |
+
+---
+
+## Enlaces del proyecto desplegado
+El proyecto se encuentra desplegado y accesible públicamente en:
+
+**https://dabtcavila.github.io/Web-VisualBoard/my-posts**
+
+---
+
+## Autores
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://via.placeholder.com/150" width="150px;" alt="David Fernando Avila Díaz"/><br />
+      <sub><b>David Fernando Avila Díaz</b></sub><br />
+      <sub>197851</sub><br />
+      <sub>Licenciatura en Ciencia de Datos</sub>
+    </td>
+    <td align="center">
+      <img src="https://via.placeholder.com/150" width="150px;" alt="Emiliano Sebastián Millán Giffard"/><br />
+      <sub><b>Emiliano Sebastián Millán Giffard</b></sub><br />
+      <sub>214360</sub><br />
+      <sub>Licenciatura en Ciencia de Datos</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+<div align="center">
+
+### Instituto Tecnológico Autónomo de México
