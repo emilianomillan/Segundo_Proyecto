@@ -4,8 +4,8 @@
 
 **Nombre:** Visual Board - Aplicación Web Tipo Pinterest  
 **Materia:** COM-11117 - Proyecto Integrador  
-**Institución:** Universidad Tecnológica de Querétaro  
-**Fecha:** Diciembre 2024  
+**Institución:** Instituto Tecnológico Autónomo de México 
+**Fecha:** 14 de Diciembre 2025  
 
 ## 👥 Equipo de Desarrollo
 
@@ -172,17 +172,10 @@ UNSPLASH_ACCESS_KEY=your_unsplash_api_key
 - Validación de formularios
 - Responsive design testing
 
-## 🔮 Futuras Mejoras
-
-- Implementar sistema de likes y comentarios
-- Añadir categorías y etiquetas
-- Sistema de seguimiento de usuarios
-- Notificaciones en tiempo real
-- PWA (Progressive Web App)
 
 ## 📝 Licencia
 
-Este proyecto fue desarrollado como parte del Proyecto Integrador de la Universidad Tecnológica de Querétaro.
+Este proyecto fue desarrollado como parte del Proyecto Integrador de la Materia COM-11117 del Instituto Tecnológico Autónomo de México
 
 ---
 
